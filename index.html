@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en" data-phase="loading" data-side="invitation" data-flipping="false">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="description" content="A birthday invitation, revealed by a golden sparkler. Kindly RSVP for an evening worth keeping.">
+  <title>A little spark. An evening with Grace.</title>
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./rsvp.css">
+  <link rel="stylesheet" href="./event.css">
+</head>
+<body>
+  <main class="experience" id="experience">
+    <div class="velvet velvet-left" aria-hidden="true"></div>
+    <div class="velvet velvet-right" aria-hidden="true"></div>
+    <div class="vignette" aria-hidden="true"></div>
+    <div class="ambient-light" aria-hidden="true"></div>
+    <header class="edition"><span>A private invitation<br>For an evening worth keeping</span><span>All black.<br>A little spark.</span></header>
+
+    <div class="stage" id="stage">
+      <div class="assembly" id="assembly">
+        <div class="envelope-back" id="envelope-back" aria-hidden="true"><div class="envelope-lining"></div></div>
+        <div class="letter-window" id="letter-window">
+          <div class="invitation-card" id="invitation-card">
+            <div class="card-turn" id="card-turn">
+              <article class="invitation" id="invitation" tabindex="-1" aria-labelledby="invitation-title" inert aria-hidden="true">
+                <img class="gold-corner corner-tl" src="./assets/gold-corner.png" alt="">
+                <img class="gold-corner corner-tr" src="./assets/gold-corner.png" alt="">
+                <img class="gold-corner corner-bl" src="./assets/gold-corner.png" alt="">
+                <img class="gold-corner corner-br" src="./assets/gold-corner.png" alt="">
+                <div class="invitation-copy">
+                  <div class="ink crest" data-ink="0"><img src="./assets/gold-crest.png" alt=""></div>
+                  <p class="ink eyebrow" data-ink="1">YOU ARE INVITED TO</p>
+                  <h1 class="ink recipient" id="invitation-title" data-ink="2"><img src="./assets/gold-name.png" alt="Grace"></h1>
+                  <h2 class="ink occasion" data-ink="3">Birthday Party</h2>
+                  <p class="ink details" data-ink="4"><span>A little photoshoot. Some delicious food.</span><span>An evening made lovelier by you.</span></p>
+                  <p class="ink sample" data-ink="5">Date to follow</p>
+                </div>
+                <a class="rsvp-link invitation-rsvp" id="rsvp-open" href="#rsvp" aria-label="Kindly RSVP, turn the invitation over" aria-controls="rsvp-face">
+                  Kindly RSVP <span class="rsvp-arrow" aria-hidden="true">&rarr;</span>
+                  <span class="rsvp-glint glint-one" aria-hidden="true"></span>
+                  <span class="rsvp-glint glint-two" aria-hidden="true"></span>
+                  <span class="rsvp-glint glint-three" aria-hidden="true"></span>
+                </a>
+              </article>
+
+              <section class="rsvp-card" id="rsvp-face" aria-labelledby="rsvp-title" inert aria-hidden="true">
+                <img class="gold-corner corner-tl" src="./assets/gold-corner.png" alt="">
+                <img class="gold-corner corner-tr" src="./assets/gold-corner.png" alt="">
+                <img class="gold-corner corner-bl" src="./assets/gold-corner.png" alt="">
+                <img class="gold-corner corner-br" src="./assets/gold-corner.png" alt="">
+                <div class="rsvp-scroll">
+                  <a class="rsvp-back" href="#invitation" data-flip-back><span aria-hidden="true">&larr;</span> Back to the invitation</a>
+                  <div id="rsvp-content">
+                    <header class="rsvp-intro">
+                      <img class="rsvp-crest" src="./assets/gold-crest.png" alt="" width="58">
+                      <p class="rsvp-kicker">The Birthday Party</p>
+                      <h1 id="rsvp-title" tabindex="-1">Will you join us?</h1>
+                      <p class="rsvp-lead">An evening made lovelier by you.</p>
+                    </header>
+
+                    <!-- This public endpoint receives replies only when the guest submits the form. -->
+                    <form class="rsvp-form" id="rsvp-form" method="post" data-endpoint="https://formspree.io/f/mwllwzad" aria-describedby="rsvp-required rsvp-privacy">
+                      <p class="rsvp-required" id="rsvp-required">Your attendance, name, and phone number are required.</p>
+                      <fieldset class="rsvp-fields" id="reply-fields">
+                        <legend class="sr-only">Your reply</legend>
+                        <fieldset class="rsvp-attendance">
+                          <legend class="rsvp-label">The pleasure of your company</legend>
+                          <div class="rsvp-choices">
+                            <label class="rsvp-choice">
+                              <input type="radio" name="attendance" value="accepts" required>
+                              <span class="rsvp-choice-copy"><strong>Joyfully accepts</strong><span>Count me in for the celebration.</span></span>
+                            </label>
+                            <label class="rsvp-choice">
+                              <input type="radio" name="attendance" value="declines" required>
+                              <span class="rsvp-choice-copy"><strong>Regretfully declines</strong><span>Sending my warmest wishes.</span></span>
+                            </label>
+                          </div>
+                        </fieldset>
+
+                        <div class="rsvp-contact">
+                          <label class="rsvp-field" for="guest-name">
+                            <span class="rsvp-label">Your name</span>
+                            <input id="guest-name" name="name" type="text" autocomplete="name" placeholder="Your full name" maxlength="100" required>
+                          </label>
+                          <label class="rsvp-field" for="guest-phone">
+                            <span class="rsvp-label">Phone number</span>
+                            <input id="guest-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="+1 202 555 0123" maxlength="40" aria-describedby="phone-hint" required>
+                            <span class="rsvp-field-hint" id="phone-hint">Include your country code if possible.</span>
+                          </label>
+                        </div>
+
+                        <div id="dietary-field" hidden>
+                          <label class="rsvp-field" for="guest-dietary">
+                            <span class="rsvp-label">Dietary requirements <span class="rsvp-optional">Optional</span></span>
+                            <textarea id="guest-dietary" name="dietary" rows="2" maxlength="1000" placeholder="Any allergies or dietary preferences we can plan for?" disabled></textarea>
+                          </label>
+                        </div>
+                      </fieldset>
+
+                      <p class="rsvp-notice" id="rsvp-connection" role="status">RSVP delivery is not connected yet. Sending is disabled.</p>
+                      <p class="rsvp-feedback" id="rsvp-feedback" role="alert" tabindex="-1" hidden></p>
+                      <button class="rsvp-submit" id="rsvp-submit" type="submit" disabled>
+                        <span id="rsvp-submit-label">Send my RSVP</span>
+                        <span aria-hidden="true">&rarr;</span>
+                      </button>
+                      <p class="rsvp-privacy" id="rsvp-privacy">For coordinating this celebration. Your reply is sent to the host via <a href="https://formspree.io" target="_blank" rel="noopener noreferrer">Formspree</a>.</p>
+                      <p class="sr-only" id="rsvp-status" role="status"></p>
+                      <noscript><p class="rsvp-notice">JavaScript is required to send your reply. Please enable it and reload.</p></noscript>
+                    </form>
+                  </div>
+
+                  <section class="rsvp-confirmation" id="rsvp-confirmation" aria-labelledby="confirmation-title" hidden>
+                    <img class="rsvp-confirmation-seal" src="./assets/gold-seal.png" alt="" width="90" height="87">
+                    <p class="rsvp-kicker">Your reply, received</p>
+                    <h1 id="confirmation-title" tabindex="-1">A place awaits you.</h1>
+                    <p class="rsvp-lead" id="confirmation-copy"></p>
+                    <p class="rsvp-confirmation-note">Your RSVP has been received by the host.</p>
+                    <a class="rsvp-return" id="rsvp-next" href="#lookbook" hidden>Dress code &amp; agenda <span aria-hidden="true">&rarr;</span></a>
+                    <a class="rsvp-return" href="#invitation" data-flip-back>Back to the invitation <span aria-hidden="true">&rarr;</span></a>
+                  </section>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+        <div class="envelope-flap" id="envelope-flap" aria-hidden="true">
+          <svg class="flap-face" viewBox="0 0 580 204">
+            <defs>
+              <clipPath id="flap-shape"><path d="M1 1H579L302 198q-12 8-24 0Z"/></clipPath>
+              <pattern id="envelope-paper" width="130" height="129" patternUnits="userSpaceOnUse"><image href="./assets/black-paper.webp" width="130" height="129"/></pattern>
+              <linearGradient id="flap-light" x1=".2" y1="0" x2=".7" y2="1"><stop stop-color="#fff" stop-opacity=".08"/><stop offset="1" stop-color="#000" stop-opacity=".4"/></linearGradient>
+            </defs>
+            <g clip-path="url(#flap-shape)"><path d="M0 0h580v204H0Z" fill="url(#envelope-paper)"/><path d="M0 0h580v204H0Z" fill="url(#flap-light)"/></g>
+            <path d="M2 3 280 195q10 8 20 0L578 3" fill="none" stroke="#674a26" stroke-width="3"/>
+            <path d="M2 1 280 193q10 8 20 0L578 1" fill="none" stroke="#d7ae65" stroke-width="1.3"/>
+            <path d="M10 3h560" stroke="#9e7f46" stroke-width=".7" opacity=".6"/>
+          </svg>
+          <svg class="flap-face flap-back" viewBox="0 0 580 204">
+            <path d="M1 1H579L302 198q-12 8-24 0Z" fill="#262117" stroke="#987a43" stroke-width="1"/>
+            <path d="M14 7h552L300 185q-10 6-20 0Z" fill="#30281b" stroke="#715e37" stroke-width="1"/>
+          </svg>
+        </div>
+        <svg class="envelope-front" id="envelope-front" viewBox="0 0 580 350" aria-hidden="true">
+          <defs>
+            <clipPath id="front-left"><path d="M0 0 310 180 0 350Z"/></clipPath>
+            <clipPath id="front-right"><path d="M580 0 270 180 580 350Z"/></clipPath>
+            <clipPath id="front-bottom"><path d="M0 350 0 346 277 167q13-8 26 0l277 179v4Z"/></clipPath>
+            <linearGradient id="left-light"><stop stop-color="#fff" stop-opacity=".04"/><stop offset="1" stop-color="#000" stop-opacity=".22"/></linearGradient>
+            <linearGradient id="right-light"><stop stop-color="#000" stop-opacity=".2"/><stop offset="1" stop-color="#fff" stop-opacity=".025"/></linearGradient>
+            <linearGradient id="bottom-light" x1="0" y1="0" x2=".5" y2="1"><stop stop-color="#fff" stop-opacity=".03"/><stop offset="1" stop-color="#000" stop-opacity=".35"/></linearGradient>
+          </defs>
+          <g clip-path="url(#front-left)"><path d="M0 0h580v350H0Z" fill="url(#envelope-paper)"/><path d="M0 0h580v350H0Z" fill="url(#left-light)"/></g>
+          <g clip-path="url(#front-right)"><path d="M0 0h580v350H0Z" fill="url(#envelope-paper)"/><path d="M0 0h580v350H0Z" fill="url(#right-light)"/></g>
+          <g clip-path="url(#front-bottom)"><path d="M0 0h580v350H0Z" fill="url(#envelope-paper)"/><path d="M0 0h580v350H0Z" fill="url(#bottom-light)"/></g>
+          <path d="M1 348 278 169q12-8 24 0l277 179" fill="none" stroke="#0a0906" stroke-width="3"/>
+          <path d="M1 346 278 167q12-8 24 0l277 179" fill="none" stroke="#ab8346" stroke-width=".8" opacity=".8"/>
+          <path d="M0 0v346q0 4 4 4h572q4 0 4-4V0" fill="none" stroke="#6b5334" stroke-width=".9"/>
+        </svg>
+        <button class="seal-button" id="seal" type="button" aria-label="Press the gold seal to open your invitation" aria-controls="invitation" aria-expanded="false" disabled>
+          <img src="./assets/gold-seal.png" alt="" width="136" height="132">
+        </button>
+        <canvas id="sparkler-effects" width="720" height="880" aria-hidden="true"></canvas>
+      </div>
+    </div>
+
+    <p class="hint"><strong>Some evenings begin with a little intrigue.</strong><span>Press the gold seal.</span></p>
+    <footer class="footer">
+      <p class="prototype-label">An invitation in six seconds.<span>Turn the card over to reply.</span></p>
+      <div class="controls">
+        <button class="replay" id="replay" type="button" disabled><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8a8 8 0 1 1-1 7M5 3v5h5" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>Replay</button>
+        <button id="skip" type="button" disabled>Open without motion</button>
+        <a class="invitation-event-link" id="event-details-link" href="#lookbook" hidden>Evening details</a>
+      </div>
+    </footer>
+    <p class="error" id="error" role="alert" hidden></p>
+  </main>
+  <p class="sr-only" id="status" role="status"></p>
+
+  <main class="lookbook" id="lookbook" aria-labelledby="lookbook-title" hidden inert aria-hidden="true">
+    <div class="lookbook-backdrop" aria-hidden="true">
+      <div class="lookbook-velvet velvet-left"></div>
+      <div class="lookbook-velvet velvet-right"></div>
+      <div class="lookbook-vignette"></div>
+    </div>
+    <header class="lookbook-masthead">
+      <a href="#invitation">The Birthday Party<span>Back to the invitation</span></a>
+      <span class="lookbook-receipt" id="event-receipt">An evening worth keeping</span>
+    </header>
+    <div class="lookbook-content">
+      <section class="lookbook-intro">
+        <img class="lookbook-crest" src="./assets/gold-crest.png" alt="" width="58">
+        <p class="lookbook-kicker">A note on what to wear</p>
+        <h1 id="lookbook-title" tabindex="-1">An evening<br><em>in black.</em></h1>
+        <p class="lookbook-lead">All-black outfits. Pants required. No dresses.</p>
+        <div class="lookbook-divider" aria-hidden="true"><span></span><i>&#10022;</i><span></span></div>
+        <p class="lookbook-note">Inspiration, not a uniform.</p>
+      </section>
+      <section class="lookbook-styles" aria-label="Three ways to style black pants">
+        <article><span class="lookbook-number">01</span><h2>Fluid.</h2><p>Wide-leg or softly draped black pants.<br>A little movement, your own way.</p></article>
+        <article><span class="lookbook-number">02</span><h2>Tailored.</h2><p>Tailored black pants with a jacket or shirt.<br>Structure, on your own terms.</p></article>
+        <article><span class="lookbook-number">03</span><h2>Relaxed.</h2><p>Your favourite black pants and a black top.<br>Comfort belongs here, too.</p></article>
+      </section>
+      <p class="lookbook-closing">No strict formality.<br><em>The styling is yours.</em></p>
+      <div class="lookbook-next"><a class="gold-button" href="#agenda">View the agenda <span aria-hidden="true">&rarr;</span></a></div>
+      <footer class="lookbook-footer"><span>One colour. Every version of you.</span><span>Date to follow.</span></footer>
+    </div>
+  </main>
+
+  <main class="lookbook agenda" id="agenda" aria-labelledby="agenda-title" hidden inert aria-hidden="true">
+    <div class="lookbook-backdrop" aria-hidden="true">
+      <div class="lookbook-velvet velvet-left"></div>
+      <div class="lookbook-velvet velvet-right"></div>
+      <div class="lookbook-vignette"></div>
+    </div>
+    <header class="lookbook-masthead">
+      <a href="#lookbook"><span aria-hidden="true">&larr;</span> Back to the dress code<span>The Birthday Party</span></a>
+      <span class="lookbook-receipt">An evening worth keeping</span>
+    </header>
+    <div class="agenda-content">
+      <section class="agenda-intro">
+        <p class="lookbook-kicker">The Birthday Party</p>
+        <h1 id="agenda-title" tabindex="-1">The evening's<br><em>agenda.</em></h1>
+        <p>Good company, a few photographs, and dinner together.</p>
+        <div class="lookbook-divider" aria-hidden="true"><span></span><i>&#10022;</i><span></span></div>
+      </section>
+      <ol class="agenda-timeline" aria-label="The evening's schedule">
+        <li class="agenda-item">
+          <p class="agenda-time">Arrive by <time datetime="16:00">4:00 pm</time></p>
+          <div class="agenda-detail">
+            <p class="agenda-step">01 / Meet</p><h2>Meet in Kirkland.</h2>
+            <address class="agenda-address">5043 114th Ave NE<br>Kirkland</address>
+            <a class="agenda-map-link" href="https://www.google.com/maps/search/?api=1&amp;query=5043%20114th%20Ave%20NE%2C%20Kirkland" target="_blank" rel="noopener noreferrer" aria-label="Open the Kirkland meeting location in Google Maps (new tab)">Open in Google Maps <span aria-hidden="true">&nearr;</span></a>
+          </div>
+        </li>
+        <li class="agenda-item">
+          <p class="agenda-time">Photos until <time datetime="17:30">5:30 pm</time></p>
+          <div class="agenda-detail"><p class="agenda-step">02 / Capture</p><h2>A moment for photos.</h2><p class="agenda-copy">Time for the photoshoot, until 5:30 pm.</p></div>
+        </li>
+        <li class="agenda-item">
+          <p class="agenda-time"><span class="agenda-after">After the photoshoot</span></p>
+          <div class="agenda-detail">
+            <p class="agenda-step">03 / Dine</p><h2>Dinner together.</h2>
+            <p class="agenda-address">Happy Lamb Hotpot<br>Bellevue</p>
+            <a class="agenda-map-link" href="https://www.google.com/maps/search/?api=1&amp;query=Happy%20Lamb%20Hotpot%20Bellevue" target="_blank" rel="noopener noreferrer" aria-label="Open Happy Lamb Hotpot Bellevue in Google Maps (new tab)">Open in Google Maps <span aria-hidden="true">&nearr;</span></a>
+          </div>
+        </li>
+      </ol>
+      <div class="lookbook-next"><a class="gold-button" href="./gifts.html">Gift list <span aria-hidden="true">&rarr;</span></a></div>
+      <div class="agenda-return"><a class="agenda-map-link" href="#lookbook"><span aria-hidden="true">&larr;</span> Back to the dress code</a></div>
+      <footer class="lookbook-footer"><span>A little photoshoot. Some delicious food.</span><span>Date to follow.</span></footer>
+    </div>
+  </main>
+  <div class="event-effects" id="event-effects" aria-hidden="true" hidden><canvas id="event-sparks" hidden></canvas></div>
+  <p class="event-error" id="event-error" role="alert" hidden></p>
+  <p class="sr-only" id="event-status" role="status"></p>
+  <noscript><p class="event-error">JavaScript is required to open this invitation and send an RSVP.</p></noscript>
+  <script src="./script.js"></script>
+  <script src="./dress-code-sparks.js"></script>
+  <script src="./event-flow.js"></script>
+  <script src="./rsvp.js"></script>
+</body>
+</html>

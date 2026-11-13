@@ -1,0 +1,364 @@
+.rsvp-back {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: fit-content;
+  min-height: 44px;
+  margin: 0 auto 14px;
+  color: #c9b18a;
+  font: 15px var(--serif);
+  text-decoration: none;
+}
+
+.rsvp-back:hover,
+.rsvp-privacy a:hover {
+  color: #f0d7a4;
+}
+
+.rsvp-card a:focus-visible,
+.rsvp-intro h1:focus-visible,
+.rsvp-confirmation h1:focus-visible {
+  outline: 2px solid #e8c788;
+  outline-offset: 5px;
+}
+
+.rsvp-card {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+  border: 1px solid #8a6c40;
+  background-color: #11110f;
+  background-image: radial-gradient(ellipse at 50% 0, #e1b9760a, transparent 70%), linear-gradient(#10100eb0, #10100e99), url("./assets/black-paper.webp");
+  background-size: auto, auto, 115px 114px;
+  box-shadow: 0 24px 70px #000000a6, inset 0 0 0 5px #0e0e0c;
+}
+
+.rsvp-scroll {
+  height: 100%;
+  padding: 24px 44px 30px;
+  overflow: auto;
+  overscroll-behavior: contain;
+  scrollbar-width: thin;
+  scrollbar-color: #8a6c40 transparent;
+}
+
+.rsvp-card::before {
+  content: "";
+  position: absolute;
+  inset: 7px;
+  border: 1px solid #a881402e;
+  pointer-events: none;
+}
+
+.rsvp-card > .gold-corner {
+  width: 62px;
+  height: 62px;
+  opacity: .8;
+}
+
+.rsvp-intro {
+  margin-bottom: 26px;
+  text-align: center;
+}
+
+.rsvp-crest {
+  width: 58px;
+  height: auto;
+  margin: 0 auto 17px;
+}
+
+.rsvp-kicker {
+  color: #c7a86f;
+  font-size: 10px;
+  line-height: 1.7;
+  letter-spacing: 2.7px;
+  text-transform: uppercase;
+}
+
+.rsvp-card h1 {
+  margin: 10px 0;
+  color: #ead09e;
+  font: 400 clamp(32px, 5vw, 43px)/1.15 var(--serif);
+}
+
+.rsvp-lead {
+  color: #c6b28e;
+  font: 16px/1.6 var(--serif);
+}
+
+.rsvp-form {
+  display: grid;
+  gap: 20px;
+}
+
+.rsvp-required {
+  color: #b6a48a;
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+.rsvp-fields,
+.rsvp-attendance {
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.rsvp-fields {
+  display: grid;
+  gap: 24px;
+}
+
+.rsvp-label {
+  padding: 0;
+  color: #d3bb94;
+  font-size: 10px;
+  line-height: 1.6;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
+
+.rsvp-attendance > legend {
+  margin-bottom: 10px;
+}
+
+.rsvp-choices,
+.rsvp-contact {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.rsvp-choice {
+  position: relative;
+  display: flex;
+  cursor: pointer;
+}
+
+.rsvp-choice input {
+  position: absolute;
+  z-index: 1;
+  top: 20px;
+  left: 15px;
+  width: 15px;
+  height: 15px;
+  margin: 0;
+  accent-color: var(--gold);
+}
+
+.rsvp-choice-copy {
+  display: block;
+  width: 100%;
+  padding: 17px 12px 17px 42px;
+  border: 1px solid #655135;
+  background: #09090859;
+  transition: background .2s, border-color .2s;
+}
+
+.rsvp-choice-copy strong {
+  display: block;
+  color: #e1c798;
+  font: 400 19px/1.25 var(--serif);
+}
+
+.rsvp-choice-copy > span {
+  display: block;
+  margin-top: 6px;
+  color: #b4a186;
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+.rsvp-choice:hover .rsvp-choice-copy {
+  border-color: #c6a062;
+}
+
+.rsvp-choice input:checked + .rsvp-choice-copy {
+  border-color: #d1aa68;
+  background: #cba56512;
+  box-shadow: inset 0 0 0 1px #d1aa6826;
+}
+
+.rsvp-choice input:focus-visible {
+  outline: none;
+}
+
+.rsvp-choice input:focus-visible + .rsvp-choice-copy {
+  outline: 2px solid #e8c788;
+  outline-offset: 4px;
+}
+
+.rsvp-field {
+  display: grid;
+  align-content: start;
+  gap: 9px;
+  min-width: 0;
+}
+
+.rsvp-field input,
+.rsvp-field textarea {
+  width: 100%;
+  min-height: 46px;
+  margin: 0;
+  padding: 12px 13px;
+  border: 1px solid #655135;
+  border-radius: 0;
+  background: #07070666;
+  color: #f0dfc0;
+  font: 16px/1.4 var(--serif);
+  transition: border-color .2s;
+}
+
+.rsvp-field textarea {
+  min-height: 85px;
+  resize: vertical;
+}
+
+.rsvp-field input::placeholder,
+.rsvp-field textarea::placeholder {
+  color: #a2937a;
+  opacity: 1;
+}
+
+.rsvp-field input:focus,
+.rsvp-field textarea:focus {
+  border-color: #e8c788;
+  outline: 2px solid #e8c788;
+  outline-offset: 3px;
+}
+
+.rsvp-field input:user-invalid,
+.rsvp-field textarea:user-invalid {
+  border-color: #e6a58f;
+}
+
+.rsvp-field-hint,
+.rsvp-optional {
+  color: #b4a186;
+  font-size: 11px;
+  line-height: 1.5;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.rsvp-optional {
+  margin-left: 8px;
+}
+
+.rsvp-notice,
+.rsvp-feedback {
+  padding: 12px 15px;
+  border: 1px solid #8e6e3c;
+  background: #211b13;
+  color: #e7cda5;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.rsvp-feedback {
+  border-color: #c18b72;
+  color: #f2cdbd;
+}
+
+.rsvp-feedback:focus {
+  outline: 2px solid #e8c788;
+  outline-offset: 3px;
+}
+
+.rsvp-submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  width: 100%;
+  min-height: 50px;
+  padding: 13px 20px;
+  border: 1px solid #e8c788;
+  background: linear-gradient(110deg, #bd965a, #e2c38a 55%, #c6a069);
+  color: #20180c;
+  font: 18px var(--serif);
+  transition: filter .2s;
+}
+
+.rsvp-submit:not(:disabled):hover {
+  filter: brightness(1.09);
+}
+
+.rsvp-submit:disabled {
+  border-color: #7c6746;
+  background: #3a3020;
+  color: #d1bb94;
+}
+
+.rsvp-privacy {
+  max-width: 410px;
+  margin: -4px auto 0;
+  color: #b5a48a;
+  font-size: 11px;
+  line-height: 1.7;
+  text-align: center;
+}
+
+.rsvp-privacy a {
+  color: inherit;
+  text-underline-offset: 3px;
+}
+
+.rsvp-confirmation {
+  padding: 48px 0 40px;
+  text-align: center;
+}
+
+.rsvp-confirmation-seal {
+  margin: 0 auto 28px;
+}
+
+.rsvp-confirmation .rsvp-lead {
+  max-width: 360px;
+  margin: 16px auto;
+}
+
+.rsvp-confirmation-note {
+  color: #b5a48a;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.rsvp-return {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  min-height: 46px;
+  margin-top: 32px;
+  padding: 12px 18px;
+  border: 1px solid #ae8a50;
+  color: #e1c798;
+  font: 16px var(--serif);
+  text-decoration: none;
+}
+
+.rsvp-return:hover {
+  background: #cba56512;
+  border-color: #e8c788;
+}
+
+@media (max-width: 600px) {
+  .rsvp-back { gap: 8px; font-size: 14px; }
+  .rsvp-scroll { padding: 24px 24px 26px; }
+  .rsvp-card > .gold-corner { width: 48px; height: 48px; }
+  .rsvp-intro { margin-bottom: 24px; }
+  .rsvp-crest { width: 50px; margin-bottom: 14px; }
+  .rsvp-contact { grid-template-columns: 1fr; gap: 20px; }
+  .rsvp-choice-copy { padding: 41px 12px 14px; }
+  .rsvp-choice input { top: 15px; left: 13px; }
+  .rsvp-choice-copy strong { font-size: 18px; }
+  .rsvp-choice-copy > span { font-size: 11px; }
+  .rsvp-choices { gap: 10px; }
+  .rsvp-confirmation { padding: 30px 0; }
+  .rsvp-return { gap: 10px; padding: 12px; }
+}

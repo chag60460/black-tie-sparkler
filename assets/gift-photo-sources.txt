@@ -1,0 +1,43 @@
+Gift product photos
+
+These are product photos from the exact retailer listings supplied by the
+user, displayed alongside links to those listings. Images remain the
+property of their respective retailers, sellers, and rights holders.
+They are not generated illustrations or photos of substitute products.
+
+Pink Mouse
+Listing: https://www.amazon.com/dp/B0B7W736Z9
+Image: https://m.media-amazon.com/images/I/51Oyf+z8JlL._AC_SL1500_.jpg
+Local: gift-pink-mouse.jpg
+
+Earbud charging case
+Listing: https://www.amazon.com/dp/B0CW62GHT6
+Image: https://m.media-amazon.com/images/I/51n8-YKDNTL._AC_SL1500_.jpg
+Local: gift-earbud-charging-case.jpg
+Listing identifies Jabra Elite 7 Pro / Elite 7 Active.
+
+Light Pink Silicone Cover (user-supplied replacement)
+Listing: https://www.amazon.com/dp/B0FNCJ9NJB
+Image: https://m.media-amazon.com/images/I/61reGvZeiIL._AC_SL1500_.jpg
+Local: gift-light-pink-cover.jpg
+Listing identifies Jabra Elite 7 Pro / Elite 7 Active.
+
+Vacuum Robot
+Listing: https://www.sears.com/thinkstar-1xa5bf89f1eh534-ovzne-robot-vacuum-cleaner-slim-quiet-3-in-1-robotic-vacuum-cleaner-ideal-for-pet-hair/p-A136845890
+Image: https://c.shld.net/rpx/i/s/pi/mp/10672750/prod_20881223210?src=https%3A%2F%2Fi5.walmartimages.com%2Fseo%2FOvzne-Robot-Vacuum-Cleaner-Slim-Quiet-3-In-1-Robotic-Vacuum-Cleaner-Ideal-for-Pet-Hair-Hard-Floors-Deal-of-The-Day_d29262e5-f714-45b8-9960-5c56bca4c0a1.7ec05315b9bff0d6bedadbd61a3ad91b.jpeg&d=a07c36374f826c830efcdf3872a34eb826da8882
+Local: gift-robot-vacuum.jpg
+
+Hair Curl Stick
+Listing: https://www.target.com/p/the-hair-edit-soft-ribbon-heatless-curls-set/-/A-1011028260
+Image: https://target.scene7.com/is/image/Target/GUEST_f45ab1db-8b08-4010-b76b-999ab4449961?wid=800&hei=800&qlt=80&fmt=pjpeg
+Local: gift-hair-curls.jpg
+
+KAO Cape 3D Extra Keep Hair Spray, 180g, unscented
+Listing: https://www.toktokbeauty.com/products/cape-3d-extra-keep-hair-spray?variant=44133862768683
+Image: https://cdn.shopify.com/s/files/1/2169/0727/files/4901301373755.png?v=1779930161
+Local: gift-hair-spray.png
+The public product data identifies variant 44133862768683 as 180g.
+
+Images were retrieved and visually checked on 2026-11-12, then resized to
+a maximum of 900 pixels for local page loading. No product recoloring,
+substitution, or AI generation was applied.
