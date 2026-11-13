@@ -52,6 +52,8 @@ test('the invitation retains the approved event details and links to standalone 
   const html = await read('index.html');
   assert.match(html, /Birthday Party/);
   assert.match(html, /A little photoshoot\. Some delicious food\./);
+  assert.match(html, /November 22, 2026(?: \/)? 4 pm/);
+  assert.doesNotMatch(html, /Date(?: &amp; place)? to follow/);
   assert.match(html, /All-black outfits\. Pants required\. No dresses\./);
   assert.match(html, /datetime="16:00"/);
   assert.match(html, /datetime="17:30"/);

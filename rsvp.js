@@ -41,7 +41,7 @@ function showConfirmation(attendance) {
   const attending = attendance === 'accepts';
   confirmationTitle.textContent = attending ? 'A place awaits you.' : "You'll be missed.";
   confirmationCopy.textContent = attending
-    ? 'A little candlelight. A little magic. And now, your lovely company.'
+    ? 'A little photoshoot. Some delicious food. And now, your lovely company.'
     : 'Thank you for letting us know. Your warm wishes are part of the celebration, too.';
   const finish = () => {
     form.reset();

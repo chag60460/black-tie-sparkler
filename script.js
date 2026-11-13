@@ -66,7 +66,7 @@ function setPhase(phase) {
     invitation.setAttribute('aria-hidden', 'false');
     invitation.focus({ preventScroll: true });
     skip.disabled = true;
-    status.textContent = 'Your invitation is ready. Grace: the birthday party. Date to follow. Use the sparkling RSVP button on the card to turn it over. Opening or turning the invitation does not send a response.';
+    status.textContent = 'Your invitation is ready. Grace: the birthday party. November 22, 2026, at 4 pm. Use the sparkling RSVP button on the card to turn it over. Opening or turning the invitation does not send a response.';
   }
 }
 function pose(t) {
