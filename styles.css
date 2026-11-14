@@ -90,7 +90,7 @@ img { display: block; max-width: 100%; user-select: none; -webkit-user-drag: non
   0%, 30%, 100% { opacity: 0; transform: scale(.4) rotate(0deg); }
   14% { opacity: .9; transform: scale(1.1) rotate(35deg); }
 }
-html[data-phase="ready"] .rsvp-link { display: inline-flex; }
+html[data-phase="ready"][data-side="invitation"][data-flipping="false"] .rsvp-link { display: inline-flex; }
 html[data-phase="ready"] .letter-window { overflow: visible; }
 html[data-phase="ready"] .stage,
 html[data-phase="ready"] .assembly,
